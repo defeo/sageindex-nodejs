@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    title
+      | Sage Index – 
+      |= doc.title 
+  body
+    h1
+      a(href='/') Sage Index
+    h2= doc.title
+    p
+      a(href=doc.url,target='_blank')= doc.url
+    p= doc.description

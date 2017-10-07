@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    title Sage Index
+  body
+    h1 Sage Index
+    p
+      a(href='/new') Add document
+    h2 Documents:
+    ul
+      each d in docs
+        li
+          a(href='/doc/' + d._id)= d.title
+      else
+        li No documents

@@ -1,0 +1,22 @@
+{
+  "name": "sageindex-nodejs",
+  "version": "1.0.0",
+  "description": "POC showcasing a nodejs rewrite of sageindex",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "local-db": "mkdir -p mongodb && mongod -f mongodb.conf"
+  },
+  "author": "Luca De Feo",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.1",
+    "mongoose": "^4.12.0",
+    "passport": "^0.4.0",
+    "pug": "^2.0.0-rc.4",
+    "request-promise-native": "^1.0.5"
+  }
+}

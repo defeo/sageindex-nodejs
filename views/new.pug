@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    title Sage Index
+    style
+      | input, textarea, button { width: 600px; display: block }
+      | #moreinfo { visibility: hidden }
+      | #moreinfo.fill { visibility: visible }
+      | #loading { visibility: hidden }
+      | #loading.loading { visibility: visible }
+  body
+    h1 
+      a(href='/') Sage Index
+    h2 Add new document
+    p
+      input#url(type="url",placeholder="Enter URL")
+      em#loading ...loading
+    #moreinfo
+      input#title(placeholder="Enter title")
+      textarea#description(placeholder="Enter description")
+      button#add Add document
+    script(src="public/new.js")
